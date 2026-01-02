@@ -1,0 +1,426 @@
+{
+    "$schema": "https://raw.githack.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+    "_meta": {
+        "sources": [
+            {
+                "json": "LuckDomain",
+                "abbreviation": "ld",
+                "full": "Cleric: Luck Domain",
+                "authors": [
+                    "BenevolentEvil"
+                ],
+                "convertedBy": [
+                    "/u/hatfielddr"
+                ],
+                "version": "1.0.0",
+                "color": "ffffff",
+                "colorNight": "ffffff",
+                "url": "https://www.dndunleashed.com/home/the-luck-domain-cleric-and-spells",
+                "dateReleased": "2026-01-02"
+            }
+        ],
+        "edition": "classic",
+        "status": "wip",
+        "dateAdded": 1767377448,
+        "dateLastModified": 1767377448
+    },
+    "subclass": [
+        {
+            "name": "Luck Domain",
+            "source": "LuckDomain",
+            "page": 1,
+            "className": "Cleric",
+            "classSource": "PHB",
+            "shortName": "Luck",
+            "subclassFeatures": [
+                "Luck Domain|Cleric||Luck|LuckDomain|1",
+                "Channel Divinity: Blind Luck|Cleric||Luck|LuckDomain|2",
+                "Sense Misfortune|Cleric||Luck|LuckDomain|6",
+                "Divine Strike|Cleric||Luck|LuckDomain|8",
+                "In the Zone|Cleric||Luck|LuckDomain|17"
+            ],
+            "casterProgression": "full",
+            "spellcastingAbility": "wis",
+            "subclassSpells": [
+                "guidance",
+                "bane",
+                "bless",
+                "augury",
+                "mirror image",
+                "bestow curse",
+                "haste",
+                "jinx|LuckDomain",
+                "twist fate|LuckDomain",
+                "blessing of luck|LuckDomain",
+                "circle of power|PHB"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "bane",
+                            "bless"
+                        ],
+                        "3": [
+                            "augury",
+                            "mirror image"
+                        ],
+                        "5": [
+                            "bestow curse",
+                            "haste"
+                        ],
+                        "7": [
+                            "jinx|LuckDomain",
+                            "twist fate|LuckDomain"
+                        ],
+                        "9": [
+                            "blessing of luck|LuckDomain",
+                            "circle of power|PHB"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "guidance"
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Luck Domain",
+            "source": "LuckDomain",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "page": 1,
+            "subclassShortName": "Luck",
+            "subclassSource": "LuckDomain",
+            "level": 1,
+            "entries": [
+                "The gods of luck and fortune have many followers, as so many mortals seek good luck and easy fortune. These deities - including Tymora, Tyche, Hermod, Vergadain, Ralishaz, Olladra, and Bes - rarely take sides, weighing weal and woe (mostly) fairly for alt Some are benevolent, especially favoring those who leave tokens of chance at their shrines. Clerics of luck often make decisions based on a coin flip or dice rolL leaving tough choices to their deity, and preaching that life is always unpredictable.",
+                {
+                    "type": "table",
+                    "caption": "Luck Domain Spells",
+                    "page": 1,
+                    "colLabels": [
+                        "Cleric Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell bane}, {@spell bless}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell augury}, {@spell mirror image}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell bestow curse}, {@spell haste}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell jinx|LuckDomain}, {@spell twist fate|LuckDomain}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell blessing of luck|LuckDomain}, {@spell circle of power|PHB}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Prophet of Chance|Cleric||Luck|LuckDomain|1|LuckDomain"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Fortune's Blessing|Cleric||Luck|LuckDomain|1|LuckDomain"
+                }
+            ]
+        },
+        {
+            "name": "Prophet of Chance",
+            "source": "LuckDomain",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "page": 1,
+            "subclassShortName": "Luck",
+            "subclassSource": "LuckDomain",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "When you choose this domain at 1st level, you gain proficiency with two gaming set of your choice, and you have advantage on ability checks made to play gaming sets that involve chance.",
+                "You also learn the {@spell guidance} cantrip, which doesn't count against the number of cleric cantrips you know."
+            ]
+        },
+        {
+            "name": "Fortune's Blessing",
+            "source": "LuckDomain",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "page": 1,
+            "subclassShortName": "Luck",
+            "subclassSource": "LuckDomain",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "Also at 1st level, whenever a creature that you can see within 60 feet of you rolls a 1 or 20 on the d20 for an attack roll, ability check, or saving throw, you can use your reaction to invoke your god's power. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.",
+                "Each time you use this feature, you choose one of the following effects.",
+                "Blessing. Either you or the creature (your choice) has advantage on one attack roll, ability check, or saving throw of its choice that it makes before the end of its next turn. It chooses to use the blessing before it makes a roll, not after. Once used, the blessing vanishes.",
+                "Fortune. Either you or the creature regains hit points equal to 2 + half your cleric level (your choice).",
+                "Fumble. The creature must succeed on a Dexterity saving throw against your cleric spell save DC, or else it is knocked prone, drops what it is holding, and is unable to take reactions until the start of its next turn."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Blind Luck",
+            "source": "LuckDomain",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "page": 1,
+            "subclassShortName": "Luck",
+            "subclassSource": "LuckDomain",
+            "level": 2,
+            "header": 1,
+            "entries": [
+                "Starting at 2nd-level, you can use your Channel Divinity to pray for a blessing of miraculous luck.",
+                "As a bonus action, you present your holy symbol and pray. Until the end of your next turn, when you make an attack, you can briefly close your eyes and choose to use the blessing. You have advantage on the attack roll and ignore disadvantage for being unable to see the target. If you hit with the attack, the blessing is used up, and if the attack deals any damage, you increase the damage dealt to one target by 2d6 + your cleric level."
+            ]
+        },
+        {
+            "name": "Sense Misfortune",
+            "source": "LuckDomain",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "page": 1,
+            "subclassShortName": "Luck",
+            "subclassSource": "LuckDomain",
+            "level": 6,
+            "header": 1,
+            "entries": [
+                "At 6th level, you learn how to recognize the sensation of approaching bad fortune. You have advantage on saving throws against traps and on initiative rolls, and you can't be surprised. In addition, when you are critically hit by an attack, you reduce the damage you take from the attack by an amount equal to your cleric level."
+            ]
+        },
+        {
+            "name": "Divine Strike",
+            "source": "LuckDomain",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "page": 1,
+            "subclassShortName": "Luck",
+            "subclassSource": "LuckDomain",
+            "level": 8,
+            "header": 1,
+            "entries": [
+                "At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8."
+            ]
+        },
+        {
+            "name": "In the Zone",
+            "source": "LuckDomain",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "page": 1,
+            "subclassShortName": "Luck",
+            "subclassSource": "LuckDomain",
+            "level": 17,
+            "header": 1,
+            "entries": [
+                "At 17th level, you are able to control your lucky streaks with perfect precision. At the start of any of your turns, you can choose to enter into a lucky trance. Until the start of your next turn, you have advantage and ignore disadvantage on all attacks, ability checks, and saving throws, and creatures have disadvantage on saving throws against cleric spells you cast.",
+                "Once you use this feature, you cannot use it again until you finish a short or long rest."
+            ]
+        }
+    ],
+    "spell": [
+        {
+            "name": "Jinx",
+            "level": 4,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ]
+            },
+            "entries": [
+                "You incant and point at one creature you can see within range, cursing it with a premonition of horrible luck. The target must make a Charisma saving throw. On a failed saving throw, the target is cursed until the spell ends. While affected by this curse, the target has disadvantage on attack rolls, ability checks, and saving throws.",
+                "A creature cursed by this spell repeats the saving throw at the end of each of its turns, ending the spell on a success."
+            ],
+            "source": "LuckDomain",
+            "page": 2,
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a shard of a shattered mirror"
+            },
+            "savingThrow": [
+                "charisma"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
+        },
+        {
+            "name": "Twist Fate",
+            "level": 4,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "when a creature that you can see within range makes an attack roll, ability check, or saving throw"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    }
+                ]
+            },
+            "entries": [
+                "You change the roll on the die into your choice of an 18 or a 3, potentially changing the result. This spell affects both rolls under advantage or disadvantage.",
+                "If you attempt to alter the saving throw of an unwilling target, the target must make a Charisma saving throw. On a failed saving throw, the spell affects it normally. On a successful saving throw, the spell has no effect."
+            ],
+            "source": "LuckDomain",
+            "page": 2,
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a set of weighted cheating dice"
+            },
+            "savingThrow": [
+                "constitution"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
+        },
+        {
+            "name": "Blessing of Luck",
+            "level": 5,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    }
+                ]
+            },
+            "entries": [
+                "You touch one willing creature and grant it a prophecy of luck. Until the spell ends, the target can grant itself advantage on any attack roll, ability check, or saving throw that it makes, and it can impose disadvantage on any attack roll made against it. It can only do this up to twice per turn, and must do so before the roll is made."
+            ],
+            "source": "LuckDomain",
+            "page": 2,
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a coin with divine iconography"
+            },
+            "miscTags": [
+                "ADV"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        }
+    ]
+}
