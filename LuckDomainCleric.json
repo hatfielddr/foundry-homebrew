@@ -355,7 +355,7 @@
                 "m": "a set of weighted cheating dice"
             },
             "savingThrow": [
-                "constitution"
+                "charisma"
             ],
             "spellAttack": [
                 "R"
